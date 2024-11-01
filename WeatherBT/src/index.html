@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sensor Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sensor Monitor</h1>
+      
+      <!-- Button to scan for BLE devices -->
+      <button class="scan-button connect-button" onclick="scan()">Scan for Devices</button>
+
+      <!-- Button to disconnect from BLE device -->
+      <button class="disconnect-button" id="disconnectButton" onclick="disconnect()" disabled>Disconnect</button>
+
+      <!-- Device status -->
+      <div id="status">Status: Not connected</div>
+
+      <!-- Modal for showing device list -->
+      <div id="deviceModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeDeviceModal()">&times;</span>
+          <h2>Available Devices</h2>
+          <ul id="deviceList" class="device-list"></ul>
+        </div>
+      </div>
+
+      <!-- Display for sensor data -->
+      <div class="sensor-data">
+        <div class="data-block" id="temperature">Temperature: N/A</div>
+        <div class="data-block" id="humidity">Humidity: N/A</div>
+        <div class="data-block" id="pressure">Pressure: N/A</div>
+      </div>
+    </div>
+  </body>
+</html>

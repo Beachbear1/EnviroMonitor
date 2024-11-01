@@ -1,0 +1,125 @@
+/* General Styles */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+/* Sensor Data Styling */
+.sensor-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.data-block {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* Button Styling */
+.connect-button {
+  background-color: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.connect-button:hover {
+  background-color: #1f6f96;
+}
+
+.connect-button:active {
+  background-color: #1a5b7d;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-height: 60%;
+  overflow-y: auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Device List Styling */
+.device-list {
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.device-entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.device-name, .device-id {
+  flex: 1;
+}
+
+.device-entry button {
+  flex: 0 0 auto;
+  margin-left: 10px;
+}

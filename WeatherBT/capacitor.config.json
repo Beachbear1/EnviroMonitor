@@ -1,0 +1,10 @@
+{
+  "appId": "com.beachy.weatherbt",
+  "appName": "WeatherBT",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
