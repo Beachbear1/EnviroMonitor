@@ -1,29 +1,24 @@
-# README #
+# Environment Sensor Project (WeatherDesignProject & WeatherBT)
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repository contains the code for a weather station project using STM32 microcontroller (Nucleo-L432KC) and a mobile Bluetooth interface for receiving weather data.
 
-### What is this repository for? ###
+## What is this repository for?
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The project reads temperature, humidity, and pressure data using sensors connected to the STM32 board and displays it on an OLED screen. The data is also transmitted via Bluetooth to a mobile application created using Capacitor.
 
-### How do I get set up? ###
+### WeatherDesignProject
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+#### Requirements
+- **STM32CubeIDE**: Development environment for STM32 microcontrollers.
+- **Hardware Components**:
+  - [Nucleo-L432KC Microcontroller](https://www.st.com/en/evaluation-tools/nucleo-l432kc.html)
+  - AHT20 Temperature/Humidity Sensor
+  - BMP280 Atmospheric Pressure Sensor
+  - SSD1306 OLED Display
+  - HM-10 Bluetooth Module
 
-### Contribution guidelines ###
+### WeatherBT (Mobile Bluetooth App)
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+#### Requirements
+- **Capacitor**: A cross-platform tool for building mobile apps with JavaScript.
+- **@capacitor-community/bluetooth-le**: Library for Bluetooth Low Energy (BLE) communication.
