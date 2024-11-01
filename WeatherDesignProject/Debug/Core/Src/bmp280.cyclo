@@ -1,0 +1,6 @@
+../Core/Src/bmp280.c:30:6:bmp280_writemem	1
+../Core/Src/bmp280.c:36:6:bmp280_readmem	1
+../Core/Src/bmp280.c:41:6:bmp280_getcalibration	1
+../Core/Src/bmp280.c:60:9:bmp280_init	2
+../Core/Src/bmp280.c:79:6:bmp280_measure	4
+../Core/Src/bmp280.c:127:8:bmp280_getaltitude	1
